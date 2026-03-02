@@ -1,0 +1,127 @@
+/* صفحة Mouvement كاملة */
+.mouvement-page {
+  max-width: 1000px; /* ممكن تغييره لـ 1200px لو حبيتي أكبر */
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f3e8ff, #ede9fe);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.mouvement-page h2, .mouvement-page h3 {
+  text-align: center;
+  color: #5b2cbf;
+  margin-bottom: 20px;
+}
+
+/* Formulaire ajout produit */
+.form-ajout {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.form-ajout input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #b199f2;
+  width: 150px;
+}
+
+.form-ajout button {
+  padding: 8px 15px;
+  background-color: #5b2cbf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-ajout button:hover {
+  background-color: #4a21a1;
+}
+
+/* Recherche */
+input[type="text"][placeholder*="Rechercher"] {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #b199f2;
+  width: 50%;
+}
+
+/* Tables */
+.mouvement-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.mouvement-table th,
+.mouvement-table td {
+  border: 1px solid #b199f2;
+  padding: 12px;
+  text-align: center;
+}
+
+.mouvement-table th {
+  background-color: #7b2cbf;
+  color: white;
+  font-weight: bold;
+}
+
+.mouvement-table td button {
+  padding: 5px 10px;
+  background-color: #b159ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.mouvement-table td button:hover {
+  background-color: #8f3fff;
+}
+
+/* Ligne vide (quand pas de données) */
+.empty-row {
+  text-align: center;
+  padding: 15px;
+  background-color: #f3e8ff;
+  color: #6d6875;
+  font-style: italic;
+}
+
+/* Scroll أفقي فقط إذا الجدول أكبر من الصفحة */
+.mouvement-page table {
+  display: table; /* خلي الجدول يتصرف كجدول طبيعي */
+  width: 100%;    /* يستغل كامل عرض الصفحة */
+  overflow-x: auto; /* شريط تمرير أفقي لو احتاج */
+  white-space: normal; /* النص يلتف طبيعيًا */
+}
+
+/* صفوف متبادلة الألوان للوضوح */
+.mouvement-table tr:nth-child(even) td {
+  background-color: #f8f1ff;
+}
+
+/* Responsive petits écrans */
+@media (max-width: 768px) {
+  .form-ajout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-ajout input {
+    width: 80%;
+  }
+
+  input[type="text"][placeholder*="Rechercher"] {
+    width: 80%;
+  }
+}

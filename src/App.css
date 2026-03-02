@@ -1,0 +1,173 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e0f7fa;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background: linear-gradient(180deg, #a78bfa, #7e22ce);
+  padding-top: 60px; /* مساحة Navbar */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  z-index: 999;
+}
+
+.sidebar .logo h1 {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar ul li a {
+  display: block;
+  padding: 12px 15px;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.sidebar ul li a.active {
+  background: rgba(255,255,255,0.3);
+}
+
+.sidebar ul li a:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+/* ===== Main Area ===== */
+.main-area {
+  margin-left: 220px;            /* يبدأ بعد Sidebar */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: calc(100% - 220px);
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 220px;                    /* بعد Sidebar */
+  right: 0;
+  height: 60px;
+  background: linear-gradient(90deg, #3c096c, #7b2cbf);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  z-index: 1000;
+}
+
+.navbar .nav-logo {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar .mode-toggle button {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.navbar .mode-toggle button:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+/* ===== Content Wrapper ===== */
+.content {
+  padding: 90px 30px 30px 30px;  /* padding-top = Navbar */
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  box-sizing: border-box;
+  background: #f5f3ff;
+}
+
+/* ===== Dashboard Content ===== */
+.dashboard-content {
+  max-width: 1200px;        /* حجم أصغر للصفحة */
+  margin: 0 auto;            /* يركّز المحتوى في الوسط */
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Overview Cards */
+.overview {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.overview .card {
+  flex: 1 1 220px;
+  min-width: 220px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+  padding: 16px 20px;
+  border-radius: 12px;
+  background: #7b2cbf;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.2s;
+}
+
+.overview .card:hover {
+  transform: translateY(-4px);
+}
+
+.overview .card .icon {
+  font-size: 32px;
+}
+
+/* Grids */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Cards Full Width داخل Dashboard */
+.dashboard-content .card {
+  width: 100%;
+  box-sizing: border-box;
+}

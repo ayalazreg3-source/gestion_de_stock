@@ -1,0 +1,55 @@
+.rapport-stock {
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.summary {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 1;
+  background: #ede7f6;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.card.danger {
+  background: #f8d7da;
+  color: #842029;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.rupture {
+  color: red;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background: #7b2cbf;
+  color: white;
+  cursor: pointer;
+}

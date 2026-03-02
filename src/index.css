@@ -1,0 +1,126 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e0f7fa;
+}
+
+/* ===== App Layout ===== */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background: linear-gradient(180deg, #a78bfa, #7e22ce);
+  padding-top: 60px; /* Navbar space */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  z-index: 999;
+}
+
+.sidebar .logo h1 {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar ul li a {
+  display: block;
+  padding: 12px 15px;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+.sidebar ul li a.active {
+  background: rgba(255,255,255,0.3);
+}
+
+/* ===== Main Area ===== */
+.main-area {
+  margin-left: 220px; /* بعد Sidebar */
+  width: calc(100% - 220px);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 220px;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(90deg, #3c096c, #7b2cbf);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  z-index: 1000;
+}
+
+.navbar .nav-logo {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar .mode-toggle button {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.navbar .mode-toggle button:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+/* ===== Content Wrapper ===== */
+.content {
+  padding: 90px 30px 30px 30px; /* بعد Navbar */
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  box-sizing: border-box;
+  background: #f5f3ff;
+}
+
+/* ===== Dashboard Wrapper ===== */
+.dashboard-content, .page-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;   /* مركز المحتوى */
+  padding: 20px;
+  box-sizing: border-box;
+}

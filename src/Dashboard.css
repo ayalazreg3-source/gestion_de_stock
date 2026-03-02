@@ -1,0 +1,113 @@
+/* ===== Main Wrapper ===== */
+.dashboard-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== Title ===== */
+.dashboard-content h1 {
+  font-size: 28px;
+  color: #3c096c;
+  margin-bottom: 25px;
+}
+
+/* ===== Cards General ===== */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  color: #3c096c;
+}
+
+/* ===== Overview ===== */
+.overview {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.overview .card {
+  flex: 1 1 220px;
+  background: #5a189a; /* foncé */
+  color: white;
+  text-align: center;
+}
+
+.overview .card p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* ===== Grids ===== */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+/* ===== Pie Center ===== */
+.card.center {
+  text-align: center;
+}
+
+/* ===== Calendar ===== */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day {
+  padding: 6px;
+  background: #f3f0ff;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.day.head {
+  background: #5a189a;
+  color: white;
+}
+
+/* ===== Stores ===== */
+.store {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.store .bar {
+  flex: 1;
+  background: #eee;
+  height: 10px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.store .bar div {
+  height: 100%;
+  background: #5a189a;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .overview {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,49 @@
+.stock-alert-page {
+  padding: 25px;
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f2fa;
+  min-height: 100vh;
+  max-width: 700px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.stock-alert-page h1 {
+  color: #9d4edd;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.success {
+  color: #2e7d32;
+  font-weight: bold;
+  text-align: center;
+}
+
+.warning {
+  color: #c62828;
+  font-weight: 500;
+}
+
+.warning ul {
+  list-style: none;
+  padding: 0;
+}
+
+.warning li {
+  background: white;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  color: #842029;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product-name {
+  color: #7b2cbf;
+}

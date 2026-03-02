@@ -1,0 +1,54 @@
+.facture {
+  padding: 30px;
+  background: #f5f2fa;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+h1 {
+  color: #5a189a;
+}
+
+.info {
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.table th {
+  background: #7b2cbf;
+  color: white;
+  padding: 10px;
+}
+
+.table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.total {
+  text-align: right;
+  color: #5a189a;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.actions button {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: none;
+  background: #7b2cbf;
+  color: white;
+  cursor: pointer;
+}

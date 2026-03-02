@@ -1,0 +1,168 @@
+.login-bg {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.login-box {
+  width: 800px;
+  height: 460px;
+  background: white;
+  border-radius: 25px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+}
+
+/* LEFT */
+.login-brand {
+  width: 50%;
+  background: linear-gradient(135deg, #3c096c, #7b2cbf);
+  color: white;
+  padding: 35px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-brand h2 {
+  font-size: 28px;
+}
+
+.login-brand p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.login-image {
+  width: 230px;
+  margin: 25px auto 10px;
+  display: block;
+}
+
+.icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 26px;
+}
+
+/* RIGHT */
+.login-form {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-avatar {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  border: 4px solid #9d4edd;
+}
+
+.login-form h3 {
+  text-align: center;
+  color: #5a189a;
+  margin-bottom: 15px;
+}
+
+/* ROLE */
+.role-select {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.role-select button {
+  flex: 1;
+  margin: 0 4px;
+  padding: 10px 0;
+  border-radius: 14px;
+  border: 2px solid #9d4edd;
+  background: transparent;
+  color: #5a189a;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.role-select button.active {
+  background: #7b2cbf;
+  color: white;
+}
+
+.role-select button:hover {
+  background: #9d4edd;
+  color: white;
+}
+
+/* FORM */
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.login-form input {
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.login-form input:focus {
+  border-color: #9d4edd;
+  outline: none;
+}
+
+.login-form button {
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  background: #7b2cbf;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background: #5a189a;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  text-align: center;
+}
+
+.switch {
+  margin-top: 14px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.switch span {
+  color: #7b2cbf;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 6px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .login-box {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .login-brand,
+  .login-form {
+    width: 100%;
+  }
+}

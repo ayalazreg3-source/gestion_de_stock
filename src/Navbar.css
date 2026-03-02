@@ -1,0 +1,40 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 220px; /* بعد Sidebar */
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  background: linear-gradient(90deg, #3c096c, #7b2cbf);
+}
+
+.navbar .nav-logo {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar .mode-toggle button {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar .mode-toggle button:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+/* Dark Mode */
+body.dark-mode .navbar {
+  background: linear-gradient(90deg, #1e1e2f, #3a0e6e);
+}
