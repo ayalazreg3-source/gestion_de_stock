@@ -1,4 +1,4 @@
-/* ===== Reset ===== */
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@ body {
   background-color: #e0f7fa;
 }
 
-/* ===== Sidebar ===== */
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -18,7 +18,7 @@ body {
   width: 220px;
   height: 100vh;
   background: linear-gradient(180deg, #a78bfa, #7e22ce);
-  padding-top: 60px; /* مساحة Navbar */
+  padding-top: 60px; 
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -58,20 +58,20 @@ body {
   background: rgba(255,255,255,0.15);
 }
 
-/* ===== Main Area ===== */
+
 .main-area {
-  margin-left: 220px;            /* يبدأ بعد Sidebar */
+  margin-left: 220px;          
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   width: calc(100% - 220px);
 }
 
-/* ===== Navbar ===== */
+
 .navbar {
   position: fixed;
   top: 0;
-  left: 220px;                    /* بعد Sidebar */
+  left: 220px;                   
   right: 0;
   height: 60px;
   background: linear-gradient(90deg, #3c096c, #7b2cbf);
@@ -103,25 +103,25 @@ body {
   background: rgba(255,255,255,0.4);
 }
 
-/* ===== Content Wrapper ===== */
+
 .content {
-  padding: 90px 30px 30px 30px;  /* padding-top = Navbar */
+  padding: 90px 30px 30px 30px; 
   width: 100%;
   min-height: calc(100vh - 60px);
   box-sizing: border-box;
   background: #f5f3ff;
 }
 
-/* ===== Dashboard Content ===== */
+
 .dashboard-content {
-  max-width: 1200px;        /* حجم أصغر للصفحة */
-  margin: 0 auto;            /* يركّز المحتوى في الوسط */
+  max-width: 1200px;    
+  margin: 0 auto;            
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
 }
 
-/* Overview Cards */
+
 .overview {
   display: flex;
   gap: 20px;
@@ -151,7 +151,7 @@ body {
   font-size: 32px;
 }
 
-/* Grids */
+
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -166,7 +166,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* Cards Full Width داخل Dashboard */
+
 .dashboard-content .card {
   width: 100%;
   box-sizing: border-box;
