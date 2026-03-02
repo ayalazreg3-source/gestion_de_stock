@@ -1,6 +1,6 @@
-/* Admin.css */
 
-/* --- الصفحة بالكامل --- */
+
+
 .admin-page {
   max-width: 1000px;
   margin: 30px auto;
@@ -17,7 +17,7 @@
   margin-bottom: 25px;
 }
 
-/* --- فورم إضافة مستخدم --- */
+
 .form-admin {
   display: flex;
   gap: 10px;
@@ -51,7 +51,7 @@
   background-color: #4a21a1;
 }
 
-/* --- البحث --- */
+
 #searchUser {
   display: block;
   margin: 0 auto 25px auto;
@@ -62,7 +62,7 @@
   outline: none;
 }
 
-/* --- جدول المستخدمين --- */
+
 .table-wrapper {
   overflow-x: auto;
 }
@@ -102,17 +102,16 @@
   opacity: 0.85;
 }
 
-/* زر الحذف باللون الأحمر */
+
 .admin-table td button.delete-btn {
   background-color: #ff4d6d;
 }
 
-/* صفوف متبادلة الألوان */
+
 .admin-table tr:nth-child(even) td {
   background-color: #f8f1ff;
 }
 
-/* صفوف فارغة */
 .empty-row {
   text-align: center;
   padding: 15px;
@@ -121,7 +120,7 @@
   font-style: italic;
 }
 
-/* Badge للدور */
+
 .role-badge {
   color: white;
   padding: 5px 10px;
@@ -137,7 +136,7 @@
   background-color: #5b2cbf;
 }
 
-/* --- Responsive --- */
+
 @media (max-width: 768px) {
   .form-admin {
     flex-direction: column;
