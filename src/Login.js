@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
 
-// الصور لازم تكون موجودة في src/assets/
+
 import stockImg from "./assets/stock.png";
 import avatarImg from "./assets/avatar.png";
 import stockkImg from "./assets/stockk.png";
@@ -10,33 +10,31 @@ import stockkImg from "./assets/stockk.png";
 function Login() {
   const navigate = useNavigate();
 
-  // ===== Navigate حسب الدور (خاصها تكون قبل useEffect) =====
+  
   const navigateToDashboard = (role) => {
     if (role === "admin") navigate("/admin-dashboard");
     else if (role === "magasinier") navigate("/magasinier-dashboard");
     else navigate("/utilisateur-dashboard");
   };
 
-  // ===== State =====
+  
   const [isRegister, setIsRegister] = useState(false);
   const [role, setRole] = useState("utilisateur");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  // URLs PHP
+ 
   const REGISTER_URL = "http://localhost/stockapi/register.php";
   const LOGIN_URL = "http://localhost/stockapi/login.php";
 
-  // ===== تسجيل الدخول تلقائياً إذا كان user مخزن =====
+  
   useEffect(() => {
     const loggedUser = JSON.parse(localStorage.getItem("user"));
     if (loggedUser) {
       navigateToDashboard(loggedUser.role);
     }
-  }, []); // خليها فارغة
-
-  // ===== Handle Register =====
+  }, []); 
   const handleRegister = async (e) => {
     e.preventDefault();
     setError("");
@@ -70,7 +68,6 @@ function Login() {
     }
   };
 
-  // ===== Handle Login =====
   const handleLogin = async (e) => {
     e.preventDefault();
     setError("");
@@ -115,7 +112,7 @@ function Login() {
     >
       <div className="login-box">
 
-        {/* ===== LEFT ===== */}
+        {}
         <div className="login-brand">
           <h2>Gestion de Stock</h2>
           <p>Simple • Moderne • Efficace</p>
@@ -127,12 +124,12 @@ function Login() {
           </div>
         </div>
 
-        {/* ===== RIGHT ===== */}
+        {}
         <div className="login-form">
           <img src={avatarImg} alt="Avatar" className="login-avatar" />
           <h3>{isRegister ? "Créer un compte" : "Connexion"}</h3>
 
-          {/* Role selection */}
+          {}
           <div className="role-select">
             <button
             type="button"
