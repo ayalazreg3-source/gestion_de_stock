@@ -1,17 +1,15 @@
-/* ==========================
-   الصفحة الأساسية
-========================== */
+
 .page {
   max-width: 1200px;
   margin: 0 auto;
   padding: 25px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f7f7fb; /* أبيض ناعم */
+  background: #f7f7fb; 
   color: #333;
   min-height: 100vh;
 }
 
-/* Header */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -22,12 +20,12 @@
 .header h2 {
   font-size: 30px;
   font-weight: bold;
-  color: #6b21a8; /* بنفسجي */
+  color: #6b21a8; 
 }
 
 .header button {
   padding: 10px 20px;
-  background: #a78bfa; /* بنفسجي فاتح */
+  background: #a78bfa; 
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -42,7 +40,7 @@
   box-shadow: 0 6px 14px rgba(126,34,206,0.4);
 }
 
-/* Search input */
+
 .search {
   width: 300px;
   padding: 10px 12px;
@@ -59,7 +57,7 @@
   box-shadow: 0 0 8px rgba(167,139,250,0.4);
 }
 
-/* Table */
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -76,7 +74,7 @@ th, td {
 }
 
 th {
-  background: #d8b4fe; /* بنفسجي فاتح */
+  background: #d8b4fe; 
   color: #fff;
   position: sticky;
   top: 0;
@@ -84,7 +82,7 @@ th {
 }
 
 tr:nth-child(even) {
-  background: #f4f2ff; /* لمسة بنفسجية خفيفة */
+  background: #f4f2ff; 
 }
 
 tr:hover {
@@ -97,7 +95,7 @@ tr:hover {
   font-style: italic;
 }
 
-/* Buttons in table */
+
 .edit, .delete {
   padding: 6px 12px;
   border: none;
@@ -109,7 +107,7 @@ tr:hover {
 }
 
 .edit {
-  background: #22c55e; /* أخضر */
+  background: #22c55e;
   color: #fff;
 }
 
@@ -118,7 +116,7 @@ tr:hover {
 }
 
 .delete {
-  background: #ef4444; /* أحمر */
+  background: #ef4444;
   color: #fff;
 }
 
@@ -126,7 +124,7 @@ tr:hover {
   background: #b91c1c;
 }
 
-/* Modal overlay */
+
 .overlay {
   position: fixed;
   top: 0;
@@ -140,41 +138,39 @@ tr:hover {
   z-index: 1000;
 }
 
-/* Modal box */
+
 .modal {
-  background: #fff; /* أبيض */
+  background: #fff;
   padding: 30px;
   width: 420px;
   border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(167,139,250,0.3); /* ظل بنفسجي خفيف */
+  box-shadow: 0 10px 25px rgba(167,139,250,0.3); 
   display: flex;
   flex-direction: column;
   gap: 15px;
   color: #333;
 }
 
-/* ==========================
-   Modal inputs (تعديلات بنفسجي غامق)
-========================== */
+
 .modal input,
 .modal select {
   padding: 12px;
   border-radius: 10px;
-  border: 1px solid #7c3aed; /* بنفسجي غامق */
+  border: 1px solid #7c3aed; 
   width: 100%;
   font-weight: bold;
-  background: #f4edff; /* خلفية بنفسجي فاتح خفيف */
-  color: #2e1065; /* نص بنفسجي غامق */
+  background: #f4edff; 
+  color: #2e1065; 
 }
 
 .modal input:focus,
 .modal select:focus {
   outline: none;
-  border-color: #5b21b6; /* بنفسجي غامق أكتر عند التركيز */
+  border-color: #5b21b6;
   box-shadow: 0 0 8px rgba(91,33,182,0.3);
 }
 
-/* Modal actions buttons */
+
 .modal-actions {
   display: flex;
   justify-content: flex-end;
