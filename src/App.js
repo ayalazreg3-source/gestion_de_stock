@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// Pages
+
 import Dashboard from "./Dashboard";
 import Admin from "./Admin";
 import Clients from "./Clients";
 import Fournisseurs from "./Fournisseurs";
-import Products from "./Products"; // هاد هو Products.jsx اللي فيه axios
+import Products from "./Products"; 
 import MouvementPage from "./MouvementPage";
 import Facture from "./Facture";
 import Login from "./Login";
@@ -14,13 +14,13 @@ import BarcodePage from "./BarcodePage";
 import RapportStock from "./RapportStock";
 import StockAlert from "./StockAlert";
 
-// Components
+
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import "./App.css";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true); // يبدأ بالدارك مود
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     if (darkMode) {
