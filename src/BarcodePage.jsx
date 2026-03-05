@@ -9,7 +9,6 @@ export default function BarcodePage() {
   const scannerRef = useRef(null);
   const manualRef = useRef(null);
 
-  // قاعدة بيانات تجريبية
   const productsDB = {
     "12345678": { name: "Laptop HP", price: 85000, stock: 5 },
     "11111111": { name: "Souris Logitech", price: 2500, stock: 0 },
